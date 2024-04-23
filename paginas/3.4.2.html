@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simulación</title>
+    <link rel="shortcut icon" href="img/alexcgdesign.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style3.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="pagina2.html">3.4</a>
+            <a href="3.4.1.html">3.4.1</a>
+            <a href="3.4.2.html">3.4.2</a>
+            <a href="creditos.html">Créditos</a>
+            
+        </nav>
+        <section class="textos-header">
+            <h1>Simulación</h1>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></div>
+    </header>
+    <main>
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo">Método De Convolución</h2>
+            <div class="contenedor-sobre-nosotros">
+                
+                <div class="contenido-textos">
+                    <p>
+                        El método de convolución se pueden usar siempre y cuando la variable aleatoria x se pueda expresar como una combinación lineal de k variables aleatórias:
+                    </p>
+                    <h3><span>1</span>Ejercicio</h3>
+                    <p>
+                        Generar por el método de la transformada inversa, números al azar que sigan las siguientes distribuciones de probabilidad: 
+                    </p>
+                    <img src="../img/3.4.1.jpg" alt="" class="imagen-about-us">
+                    <p>
+                        <ol>
+                            <li>Identificar cuantos tramos tiene la figura.</li>
+                            <li>Identificar el tipo de comportamiento que se va a generar en cada tramo.</li>
+                            <li>Identificar cada uno de los puntos de los tramos y la ecuación que lo define
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Tramo 1 (0, 1)</th>
+                                            <th>Tramo 2 (1, 2)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>P1(0, 5/4) P2(1, 1/4)</p>
+                                            </td>
+                                            <td>
+                                                <p>P1(1, 1/4)   P2(2, 1/4)</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li><p>
+                                Calculamos la pendiente m = (Y2-Y1)/(X2-X1)
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>((1/-4)-(5/4))/(1-0) = -1/1 =-1</p>
+                                            </td>
+                                            <td>
+                                                <p>((1/-4)-(1/4))/(2-1) = 0/1 =0</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Calculamos el punto pendiente de y-y1=mx-x1
+                                </p>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>y-5/4=-1(x-0) <br> y=-x+5/4</p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    y-1/4=0(1-1) <br>
+                                                    y=1/4
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li>
+                                <p>Identificar la función que describa la dsitribución</p>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Tramo 1</th>
+                                            <th>Tramo 2</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>y=-x+5/4</td>
+                                            <td>y=1/4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li>
+                                <p>Genera la distribución acumulada</p>
+                                <img src="../img/3.4.1-7.png" alt=" class="imagen-about-us">
+                            </li>
+                            <li>
+                                <p>
+                                    Reemplazar la "f(x)" por un random
+                                </p>
+                                <img src="../img/3.4.1-8.png" alt=" class="imagen-about-us">
+                            </li>
+                            <li>
+                                <p>Despejar la "x", hallando la función inversa</p>
+                                <img src="../img/3.4.1-9.png" alt=" class="imagen-about-us">
+                            </li>
+                        </ol>
+                    </p>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2 class="titulo-final">&copy; Equipo 4 | Odyssey</h2>
+    </footer>
+</body>
+
+
+</html>
