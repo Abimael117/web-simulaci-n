@@ -38,29 +38,37 @@
                 
                 <div class="contenido-textos">
                     <p>
-                        El método de convolución se pueden usar siempre y cuando la variable aleatoria x se pueda expresar como una combinación lineal de k variables aleatórias: 
-                    </p>
-                    <img src="../img/3.4.2/Formula3.4.2.png" alt="" class="imagen-about-us">
-                    <p>
-                        En este método se necesita generar k números aleatorios (u1,u2,...,uk) para generar (x1,x2,...xk) variables aleatórias usando alguno de los métodos anteriores y así poder obtener un valor de lá variable que se desea obtener por convolución..
-                    </p>
-                    <h3><span>1</span>Ejercicio</h3>
-                    <p>
-                        Los pesos de los soldados presentan una distribución normal de media 65kg y desviación de 8kg. Genere 5 variables aleatorias con esta distribución para simular el proceso de pesaje. <br><br> Formula 
-                    </p>
-                    <img src="../img/3.4.2/3.4.2 ejer.png" alt="" class="imagen-about-us">
-                    <p>
-                        Donde: σ= Desviación 8kg <br> µ= Distribución 65kg
+                        Sea f(x) la función de densidad de una variable aleatoria X. El método de composición consiste en lo siguiente:
                     </p>
                     <ol>
-                        <li>Calculamos 5 veces 12 números aleatorios en excel.</li>
-                        <img src="../img/3.4.2/4.3.2-3.png" alt="" width="120%">
+                        <li>Se descompone <br> <img src="../img/3.4.3/3.4.3 - 1.gif" alt=""> <br>f como, con fi función de densidad <br> <img src="../img/3.4.3/3.4.3 - 2.png" alt=""></li>
                         <li>
-                            Aplicamos la fórmula paso a paso.
+                            Se elige la i-ésima función con probabilidad pi y se genera un valor para la función de densidad fi.
                         </li>
-                        <img src="../img/3.4.2/3.4.2 - 4.png    " alt="" width="100%">
+                        <br>
                     </ol>
-                    
+                    <h3><span>1</span>Ejercicio</h3>
+                    <img src="../img/3.4.3/3.4.3 - 3.gif" alt="" >
+                    <p>
+                        La función de distribución es
+                    </p>
+                    <img src="../img/3.4.3/3.4.3 - 4.gif" alt="" width="80%">
+                    <p>
+                        por lo que no se puede aplicar el método de la transformación inversa. Sin embargo, si hacemos
+                    </p>
+                    <img src="../img/3.4.3/3.4.3 - 5.png" alt="">
+                    <p>entonces</p>
+                    <img src="../img/3.4.3/3.4.3 - 6.gif" alt="">
+                    <p>y podemos aplicar el método de composición</p>
+                    <img src="../img/3.4.3/3.4.3 - 7.gif" alt="" width="90%">
+                    <img src="../img/3.4.3/3.4.3 - 8.gif" alt="" width="120%">
+                    <img src="../img/3.4.3/3.4.3 - 9.gif" alt="" width="40%">
+                    <p>
+                        El método queda: <br>
+                        1.Se genera u1, u2 con distribución U(0,1). <br>
+                        2.Si  u_1 < 5/6, entonces x=2u2. En caso contrario
+
+                    </p>
                 </div>
             </div>
         </section>
